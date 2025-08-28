@@ -45,7 +45,12 @@ function animasjonStart() {
   player1.classList.add("shake");
   player2.classList.add("shake");
   console.log("shake hands");
+<<<<<<< HEAD
   setTimeout(animasjonSlutt, 1800);
+=======
+
+  animasjonSlutt();
+>>>>>>> c86676c69abd67b419464843d9b8896ef193b737
 }
 
 function animasjonSlutt() {

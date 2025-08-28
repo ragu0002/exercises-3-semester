@@ -1,7 +1,11 @@
 body {
   margin: 0;
   background-color: #444059;
+<<<<<<< HEAD
   font-family: "Luckiest Guy", cursive;
+=======
+  font-family: 'Luckiest Guy', cursive;
+>>>>>>> c86676c69abd67b419464843d9b8896ef193b737
   color: #eee;
 }
 
@@ -26,7 +30,11 @@ h1 {
 }
 
 .player {
+<<<<<<< HEAD
   transform: scale(var(--rot), 1);
+=======
+  transform: scale(var(--rot),1);
+>>>>>>> c86676c69abd67b419464843d9b8896ef193b737
   width: 40vw;
   height: 40vw;
   background-size: 100%;
@@ -53,6 +61,7 @@ h1 {
 
 @keyframes shake {
   0% {
+<<<<<<< HEAD
     transform: scale(var(--rot), 1) translateX(calc((var(--rot) - 1) * 50%)) rotate(0deg);
   }
   16% {
@@ -81,6 +90,36 @@ h1 {
   }
   100% {
     transform: scale(var(--rot), 1) translateX(calc((var(--rot) - 1) * 50%)) rotate(0deg);
+=======
+    transform: scale(var(--rot),1) translateX(calc((var(--rot) - 1) * 50%)) rotate(0deg);
+  }
+  16% {
+    transform: scale(var(--rot),1) translateX(calc((var(--rot) - 1) * 50%)) rotate(-40deg);
+  }
+  24% {
+    transform: scale(var(--rot),1) translateX(calc((var(--rot) - 1) * 50%)) rotate(5deg);
+  }
+  32% {
+    transform: scale(var(--rot),1) translateX(calc((var(--rot) - 1) * 50%)) rotate(0deg);
+  }
+  48% {
+    transform: scale(var(--rot),1) translateX(calc((var(--rot) - 1) * 50%)) rotate(-40deg);
+  }
+  56% {
+    transform: scale(var(--rot),1) translateX(calc((var(--rot) - 1) * 50%)) rotate(5deg);
+  }
+  64% {
+    transform: scale(var(--rot),1) translateX(calc((var(--rot) - 1) * 50%)) rotate(0deg);
+  }
+  80% {
+    transform: scale(var(--rot),1) translateX(calc((var(--rot) - 1) * 50%)) rotate(-40deg);
+  }
+  96% {
+    transform: scale(var(--rot),1) translateX(calc((var(--rot) - 1) * 50%)) rotate(5deg);
+  }
+  100% {
+    transform: scale(var(--rot),1) translateX(calc((var(--rot) - 1) * 50%)) rotate(0deg);
+>>>>>>> c86676c69abd67b419464843d9b8896ef193b737
   }
 }
 
@@ -107,7 +146,11 @@ h1 {
 }
 
 #buttons.disabled button {
+<<<<<<< HEAD
   filter: grayscale(100%) brightness(0.75);
+=======
+  filter: grayscale(100%) brightness(.75);
+>>>>>>> c86676c69abd67b419464843d9b8896ef193b737
 }
 
 #buttons button {
@@ -115,7 +158,11 @@ h1 {
   border-radius: 10vw;
   width: 10vw;
   height: 10vw;
+<<<<<<< HEAD
   transition: filter 0.8s;
+=======
+  transition: filter .8s;
+>>>>>>> c86676c69abd67b419464843d9b8896ef193b737
 }
 
 button.rock {
@@ -128,4 +175,8 @@ button.paper {
 
 button.scissors {
   background-image: url(button_scissors.png);
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> c86676c69abd67b419464843d9b8896ef193b737
