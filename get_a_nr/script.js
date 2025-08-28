@@ -1,4 +1,11 @@
 "use strict";
+const myName = "king";
+
+queenShit("girl");
+function queenShit(myName) {
+  myName = "queen";
+  console.log(`hello ${myName}`);
+}
 
 const btn = document.querySelector("button");
 const inpt = document.querySelector("input");
