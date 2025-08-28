@@ -1,0 +1,48 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: black;
+  display: flex;
+  justify-content: center; /* centers horizontally */
+  align-items: center; /* centers vertically */
+  height: 100vh;
+}
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid black;
+  background-color: blue;
+  border-radius: 500px;
+  width: 800px;
+  height: 800px;
+  gap: 50px;
+}
+
+button {
+  background-color: rgb(19, 157, 211);
+  border: 0.5px solid rgb(170, 245, 255);
+  padding: 10px;
+}
+h2,
+h3,
+p {
+  font-family: "Press Start 2P", system-ui;
+  color: aliceblue;
+}
+button:hover {
+  background-color: rgb(3, 7, 31);
+}
+.button_container {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+}
+h2 {
+  font-size: 1.2rem;
+}
+.hide {
+  display: none;
+}
