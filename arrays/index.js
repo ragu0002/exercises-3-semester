@@ -6,7 +6,7 @@ console.log(letters[4]);
 let newArr = letters;
 newArr[4] = `*`;
 
-console.log(letters[4]);*/
+console.log(letters[4]);
 
 const people = ["Harry", "Ron", "Hermine"];
 let result;
@@ -45,4 +45,31 @@ console.log("result", result);
 
 result = people.slice(result, 1);
 console.log("people", people);
-console.log("result", result);
+console.log("result", result);*/
+
+const animals = [
+  {
+    name: "Mandu",
+    type: "cat",
+  },
+  {
+    name: "Winston",
+    type: "cat",
+  },
+  {
+    name: "Mira",
+    type: "dog",
+  },
+  {
+    name: "Speik",
+    type: "dog",
+  },
+];
+
+function isCat(animals) {
+  if (animals.type === "cat") {
+    return true;
+  } else {
+    return false;
+  }
+}
