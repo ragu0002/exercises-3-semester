@@ -8,14 +8,12 @@ setInterval(getElement, 1000);
 function getElement() {
   console.log("getElemt");
   const li = document.createElement("li");
-  arr.push(getRandomNum);
+  arr.push(getRandomNum(100));
 
   li.style.setProperty("--height", getRandomNum(100));
   list.appendChild(li);
 
-  let result = [...arr, list.appendChild(li)];
-  console.log(result);
-  if (arr.length == 6) {
+  if (arr.length == 21) {
     arr.shift();
     document.querySelector("li").remove();
   }
