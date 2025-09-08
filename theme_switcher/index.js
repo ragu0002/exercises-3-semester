@@ -1,5 +1,5 @@
 const selectElement = document.querySelector(".theme");
-
+document.querySelector("body").dataset.filter = "light";
 selectElement.addEventListener("change", (evt) => {
   klikk(evt.target.value);
   console.log("event", evt);

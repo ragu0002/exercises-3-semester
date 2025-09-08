@@ -1,27 +1,59 @@
 [data-filter="light"] {
-  --header-bg-col: pink;
-  --footer-bg-col: pink;
-  --main-bg-col: pink;
-  color: blueviolet;
+  --bg-col: rgb(192, 195, 255);
+  --boarder-color: rgb(141, 131, 243);
+  --font-family: "Montserrat", sans-serif;
+  color: rgb(91, 85, 160);
 }
 [data-filter="dark"] {
-  --header-bg-col: palevioletred;
-  --footer-bg-col: palevioletred;
-  --main-bg-col: palevioletred;
-  color: blue;
+  --bg-col: rgb(91, 85, 160);
+  --boarder-color: rgb(223, 224, 251);
+  --font-family: "Montserrat", sans-serif;
+  color: rgb(223, 224, 251);
 }
 [data-filter="queen_shit"] {
-  --header-bg-col: green;
-  --footer-bg-col: green;
-  --main-bg-col: green;
-  color: aqua;
+  --bg-col: rgb(255, 208, 249);
+  --boarder-color: rgb(255, 6, 164);
+  --font-family: "Ballet", cursive;
+  color: rgb(255, 6, 164);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+p,
+h1,
+label {
+  font-family: var(--font-family);
 }
 header {
-  background-color: var(--header-bg-col);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--bg-col);
+  padding: 40px;
+  border: 1px solid var(--boarder-color);
 }
 footer {
-  background-color: var(--footer-bg-col);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px;
+  background-color: var(--bg-col);
+  border: 1px solid var(--boarder-color);
 }
 main {
-  background-color: var(--main-bg-col);
+  background-color: var(--bg-col);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid var(--boarder-color);
+}
+body {
+  min-height: 100vh;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
 }
