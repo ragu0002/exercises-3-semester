@@ -1,0 +1,27 @@
+[data-filter="light"] {
+  --header-bg-col: pink;
+  --footer-bg-col: pink;
+  --main-bg-col: pink;
+  color: blueviolet;
+}
+[data-filter="dark"] {
+  --header-bg-col: palevioletred;
+  --footer-bg-col: palevioletred;
+  --main-bg-col: palevioletred;
+  color: blue;
+}
+[data-filter="queen_shit"] {
+  --header-bg-col: green;
+  --footer-bg-col: green;
+  --main-bg-col: green;
+  color: aqua;
+}
+header {
+  background-color: var(--header-bg-col);
+}
+footer {
+  background-color: var(--footer-bg-col);
+}
+main {
+  background-color: var(--main-bg-col);
+}

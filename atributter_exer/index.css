@@ -1,0 +1,11 @@
+[data-filter="fox"] {
+  --background-col: rgb(226, 75, 141);
+  color: rgb(239, 230, 230);
+}
+[data-filter="bat"] {
+  --background-col: rgb(53, 3, 30);
+  color: rgb(221, 20, 187);
+}
+h1 {
+  background-color: var(--background-col);
+}
