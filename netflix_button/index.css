@@ -1,0 +1,43 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  min-height: 100vh;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  margin: 20px;
+}
+
+.screen {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(244, 134, 213);
+  padding: 200px;
+}
+
+button {
+  background-color: rgb(192, 234, 255);
+  padding: 50px;
+  border: solid black;
+}
+.hide {
+  opacity: 0;
+}
+.count-down-bt {
+  animation-name: count-down-bt_kf;
+  animation-duration: 10s;
+  animation-timing-function: linear;
+  animation-fill-mode: both;
+}
+@keyframes count-down-bt_kf {
+  from {
+    background-color: rgb(192, 234, 255);
+  }
+  to {
+    background-color: rgb(2, 20, 28);
+    scale: 0 1;
+  }
+}
