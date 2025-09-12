@@ -7,8 +7,10 @@ function moveListener(event) {
 
   console.log("clientY: " + event.clientY);
   const value1 = 233;
-  const value2 = event.clientX % 256;
-  const value3 = event.clientY % 256;
+  //const value2 = event.clientX % 256;
+  // const value3 = event.clientY % 256;
+  const value2 = (event.clientX / window.innerWidth) * 100;
+  const value3 = (event.clientY / window.innerHeight) * 100;
   const colorString = `rgb(${value1}, ${value2}, ${value3})`;
   const newBacgroundcolor = colorString;
   color.style.setProperty("background-color", newBacgroundcolor);
