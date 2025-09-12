@@ -19,9 +19,6 @@ async function getData() {
 const nr = document.querySelector("div");
 function showNr(event) {
   console.log(event.inQueue);
-  let randomNr = event.inQueue;
-  if (event.inQueue === nr) {
-    nr.classList.add("color");
-  }
+
   document.querySelector("h1").innerText = event.inQueue;
 }
